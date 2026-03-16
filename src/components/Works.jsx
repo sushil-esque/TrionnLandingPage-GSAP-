@@ -188,7 +188,7 @@ function Works() {
   );
 
   return (
-    <div id="works" className="px-6 md:px-0 overflow-hidden">
+    <div id="works" className="px-6 md:px-0 ">
       <div
         id="works-heading"
         className="mt-20 flex flex-col md:flex-row justify-between items-start md:items-end gap-10 md:gap-0"
