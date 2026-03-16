@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: "Dirtyline 36Daysoftype 2022";
+  src:
+    url("/fonts/Dirtyline36Daysoftype2022.woff2") format("woff2"),
+    url("/fonts/Dirtyline36Daysoftype2022.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Dirtyline 36Daysoftype 2022", sans-serif;
+}
+
+body {
+  --bg-color: #eef3f3;
+  --text-color: #3f4144;
+  --text-color-faded: #dce1e1;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.dark body {
+  --bg-color: #121315;
+  --text-color: #e0eeee;
+  --text-color-faded: #252525;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
