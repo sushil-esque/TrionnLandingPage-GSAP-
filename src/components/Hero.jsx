@@ -82,15 +82,36 @@ function Hero() {
             <span className="hidden md:inline">
               tech development to companies.
             </span>
-            <img
-              src="/move-down-dark.e55c1fb4.svg"
-              alt=""
-              className="mt-5 size-[20px] md:size-[25px]"
-            />
+            <button
+              onClick={() => {
+                // For mobile, scroll to the mobile video container
+                if (window.innerWidth < 768) {
+                  document
+                    .getElementById("mobile-video")
+                    ?.scrollIntoView({ behavior: "smooth", block: "start" });
+                } else {
+                  // For desktop, the video scales and translates heavily.
+                  // Simply scrolling down by the viewport height perfectly clears the top section,
+                  window.scrollTo({
+                    top: window.innerHeight,
+                    behavior: "smooth",
+                  });
+                }
+              }}
+            >
+              <img
+                src="/move-down-dark.e55c1fb4.svg"
+                alt=""
+                className="mt-5 size-[20px] md:size-[25px] cursor-pointer"
+              />
+            </button>
           </p>
         </div>
 
-        <div className=" hidden sm:flex items-center justify-center w-full mt-6 md:mt-10">
+        <div
+          id="video"
+          className=" hidden sm:flex items-center justify-center w-full mt-6 md:mt-10"
+        >
           <video
             src="/intro-video.mp4"
             autoPlay
@@ -108,7 +129,10 @@ function Hero() {
           </button>
         </div>
       </div>
-      <div className="flex sm:hidden p-2 items-center justify-center w-full -mt-10 ">
+      <div
+        id="mobile-video"
+        className="flex sm:hidden p-2 items-center justify-center w-full -mt-10 "
+      >
         <video
           src="/intro-video.mp4"
           autoPlay

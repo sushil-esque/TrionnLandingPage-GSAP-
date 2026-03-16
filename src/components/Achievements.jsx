@@ -113,7 +113,7 @@ function Achievements() {
   );
 
   const cardBaseClass =
-    "group h-[300px] md:h-[400px] w-full md:w-[48%] p-10 md:p-[66px] bg-[#e1eaea] dark:bg-[#16181a] rounded-3xl md:rounded-4xl transition-colors duration-500 cursor-pointer ";
+    "group  h-[300px] md:h-[400px] w-full md:w-[48%] p-10 md:p-[66px]  rounded-3xl md:rounded-4xl transition-colors duration-500 cursor-pointer ";
 
   return (
     <div id="achievements" className="mt-20 px-6 md:px-0 ">
@@ -122,7 +122,7 @@ function Achievements() {
         <div
           id="card1"
           onClick={() => isMobile && toggleActive("card1")}
-          className={`${cardBaseClass}  self-start md:hover:bg-[#df4818] md:hover:text-[#e0eeee]`}
+          className={`${cardBaseClass} bg-[#df4818]  md:bg-[#e1eaea] dark:md:bg-[#16181a]   self-start md:hover:bg-[#df4818] md:hover:text-[#e0eeee]`}
         >
           <div className="text-7xl md:text-9xl tracking-[-3px] flex">
             <AnimatedDigit delay={0} triggerRoll={activeCards.card1}>
@@ -146,7 +146,7 @@ function Achievements() {
         <div
           id="card2"
           onClick={() => isMobile && toggleActive("card2")}
-          className={`${cardBaseClass} self-start md:self-end md:-mt-[180px] md:hover:bg-[#4c4e51] md:hover:text-[#e0eeee]`}
+          className={`${cardBaseClass} bg-[#4c4e51]  md:bg-[#e1eaea] dark:md:bg-[#16181a] self-start md:self-end md:-mt-[180px] md:hover:bg-[#4c4e51] md:hover:text-[#e0eeee]`}
         >
           <div className="text-7xl md:text-9xl tracking-[-3px] flex">
             <AnimatedDigit delay={0} triggerRoll={activeCards.card2}>
@@ -173,7 +173,7 @@ function Achievements() {
         <div
           id="card3"
           onClick={() => isMobile && toggleActive("card3")}
-          className={`${cardBaseClass} self-start md:-mt-[180px] md:hover:bg-[#a0c8b8] md:hover:text-[#e0eeee]`}
+          className={`${cardBaseClass} bg-[#a0c8b8] md:bg-[#e1eaea] dark:md:bg-[#16181a] self-start md:-mt-[180px] md:hover:bg-[#a0c8b8] md:hover:text-[#e0eeee]`}
         >
           <div className="text-7xl md:text-9xl tracking-[-3px] flex">
             <AnimatedDigit delay={0} triggerRoll={activeCards.card3}>
@@ -197,7 +197,7 @@ function Achievements() {
         <div
           id="card4"
           onClick={() => isMobile && toggleActive("card4")}
-          className={`${cardBaseClass} self-start md:self-end md:-mt-[180px] md:hover:bg-[#dbcc3d] md:hover:text-[#e0eeee]`}
+          className={`${cardBaseClass} bg-[#dbcc3d] md:bg-[#e1eaea] dark:md:bg-[#16181a] self-start md:self-end md:-mt-[180px] md:hover:bg-[#dbcc3d] md:hover:text-[#e0eeee]`}
         >
           <div className="text-7xl md:text-9xl tracking-[-3px] flex">
             <AnimatedDigit delay={0} triggerRoll={activeCards.card4}>

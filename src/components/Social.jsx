@@ -184,7 +184,7 @@ function Social() {
     });
   });
   return (
-    <div className="-mt-32 md:-mt-60 px-6 md:px-0">
+    <div className="mt-10 md:-mt-60 px-6 md:px-0">
       <h3 className="text-5xl md:text-[190px] font-stretch-75% font-semibold leading-tight md:leading-36 tracking-tighter gap-0 uppercase flex flex-col items-center justify-center text-center">
         <span id="firstSpan">Join our</span>
         <span id="secondSpan">Jungle</span>

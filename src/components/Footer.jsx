@@ -50,7 +50,7 @@ function Footer() {
   );
 
   return (
-    <div className="my-20 md:my-40 px-6 md:px-0 overflow-hidden">
+    <div className="my-20 md:my-40 px-6 md:px-0 ">
       <h3 className="text-6xl md:text-[190px] font-stretch-75% font-semibold leading-tight md:leading-36 tracking-tighter gap-0 uppercase flex flex-col items-center md:items-start text-center md:text-left">
         <span id="footerFirstSpan">time to</span>
         <span id="footerSecondSpan">roar!</span>
