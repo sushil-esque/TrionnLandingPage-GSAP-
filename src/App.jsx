@@ -4,7 +4,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 import Hero from "./components/Hero";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
-import Works from "./components/works";
+import Works from "./components/Works";
 import { SplitText } from "gsap/all";
 import About from "./components/About";
 import Achievements from "./components/Achievements";
