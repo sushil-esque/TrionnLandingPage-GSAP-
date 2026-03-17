@@ -13,12 +13,21 @@ import { Draggable } from "gsap/all";
 import Dribble from "./components/Dribble";
 import Social from "./components/Social";
 import Footer from "./components/Footer";
+import SmokeyCursor from "./components/SmokeyCursor";
 gsap.registerPlugin(ScrollTrigger, SplitText, Draggable);
 
 function App() {
   return (
     <ThemeProvider>
-      <main className="container mx-auto px-2 sm:px-0 overflow-x-hidden sm:overflow-x-visible">
+      <main className="container mx-auto px-2 sm:px-0">
+        <SmokeyCursor
+          autoColors={false}
+          backgroundColor={{ r: 2, g: 2, b: 2 }}
+          splatRadius={0.2}
+          splatForce={5000}
+          // dyeResolution={2048}
+          densityDissipation={6}
+        />
         <Navbar />
         <Hero />
         <div className="h-[750px] hidden sm:block"></div>

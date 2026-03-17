@@ -117,7 +117,7 @@ function About() {
   );
 
   return (
-    <div id="about" className="px-6 md:px-0 ">
+    <div id="about" className="px-6 md:px-0">
       <div
         id="about-heading"
         className="mt-20 flex flex-col md:flex-row justify-between items-start md:items-end gap-10 md:gap-0"

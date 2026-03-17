@@ -135,16 +135,16 @@ function Clients() {
   const allClients = [...clients, ...clients, ...clients];
 
   return (
-    <div className="px-6 md:px-0 overflow-hidden">
+    <div className="px-6 md:px-0 ">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end mt-20 gap-10">
         <h3
           id="partner-love"
           className="text-6xl md:text-[135px] font-semibold leading-tight md:leading-[100px] tracking-tight md:tracking-[-8px] scale-y-110 md:scale-y-120 origin-bottom"
         >
-          <div className="overflow-hidden">
+          <div className="">
             <p className="partner-text inline-block">PARTNER</p>
           </div>
-          <div className="overflow-hidden">
+          <div className="">
             <p className="love-text inline-block">LOVE</p>
           </div>
         </h3>
